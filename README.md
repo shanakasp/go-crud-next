@@ -15,4 +15,6 @@ https://github.com/joho/godotenv
 
  go get -u gorm.io/driver/postgres
 
+ Created main.go file
+
  CompileDaemon -command="./go-crud-next"
