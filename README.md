@@ -18,3 +18,5 @@ go get -u gorm.io/driver/postgres
 Created main.go file
 
 CompileDaemon -command="./go-crud-next"
+
+go run migrate/migrate.go
