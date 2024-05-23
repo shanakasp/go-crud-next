@@ -22,7 +22,12 @@ func main() {
 	
 	
 	r := gin.Default()
-	r.POST("/ping", controllers.PostsCreate)
+	r.POST("/posts", controllers.PostsCreate)
+	r.GET("/posts", controllers.GetAllPosts)
+	r.GET("/post/:id", controllers.GetPostBYId)
+	r.PUT("/post/:id", controllers.PostsUpdate)
+	r.DELETE("/post/:id", controllers.DeletePost)
+
 	r.Run() 
 	
 }
